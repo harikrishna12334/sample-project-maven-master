@@ -77,7 +77,14 @@
                    <target>1.8</target>
                  </configuration>
              </plugin>
-                 
+                 <plugin>
+            <groupId>org.web3j</groupId>
+            <artifactId>web3j-maven-plugin</artifactId>
+            <version>4.5.11</version>
+            <configuration>
+                <soliditySourceFiles/>
+            </configuration>
+        </plugin>
                  
              </plugins>
     </build>
