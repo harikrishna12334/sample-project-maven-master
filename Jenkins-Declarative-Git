@@ -1,6 +1,9 @@
 
 pipeline{
 	agent any
+	environment{
+        PATH = "D:\Krishna\Binaries\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin:$PATH"
+    }
 	
 
 	stages{
@@ -13,7 +16,7 @@ pipeline{
 		
 		stage('Maven Build'){
 		    steps{
-        sh 'mvn clean package'   
+        bat 'mvn clean package'   
 		    }
     }
 	}
