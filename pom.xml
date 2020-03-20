@@ -17,6 +17,11 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+         
+          <properties>
+        <java.home>D:/Krishna/AWS/java8/Java/jdk1.8.0_201/bin/javac</java.home>
+  </properties>
+
 
     <dependencies>
         <dependency>
@@ -60,16 +65,22 @@
                     <mainClass>org.web3j.sample.Application</mainClass>
                 </configuration>
             </plugin>
-            <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.5.1</version>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-            </configuration>
-        </plugin>
-        </plugins>
+                 <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.5.1</version>
+                <configuration>
+                      <verbose>true</verbose>
+                      <fork>true</fork>
+                      <executable>${java.home}</executable>
+                   <compilerVersion>1.8</compilerVersion>
+                   <source>1.8</source>
+                   <target>1.8</target>
+                 </configuration>
+             </plugin>
+                 
+                 
+             </plugins>
     </build>
 
 </project>
