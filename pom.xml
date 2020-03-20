@@ -16,11 +16,10 @@
         <exec-maven-plugin>1.6.0</exec-maven-plugin>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+             <java.home>D:/Krishna/AWS/java8/Java/jdk1.8.0_201/bin/javac</java.home>
     </properties>
          
-          <properties>
-        <java.home>D:/Krishna/AWS/java8/Java/jdk1.8.0_201/bin/javac</java.home>
-  </properties>
+          
 
 
     <dependencies>
